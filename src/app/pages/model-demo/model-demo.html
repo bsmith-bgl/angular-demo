@@ -1,0 +1,11 @@
+<div class="container">
+  <a routerLink="/" class="back-link">← Back to Home</a>
+
+  <h1>Model Signal Demo</h1>
+  <p>Two-way binding with model() - child can update parent's signal</p>
+
+  <section class="demo-section">
+    <p>Parent value: <strong>{{ name() }}</strong></p>
+    <app-child [(name)]="name" />
+  </section>
+</div>

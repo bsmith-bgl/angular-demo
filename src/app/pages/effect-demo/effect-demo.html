@@ -1,0 +1,12 @@
+<div class="container">
+  <a routerLink="/" class="back-link">← Back to Home</a>
+
+  <h1>Effect Demo</h1>
+  <p>Effects run side effects when signals change</p>
+
+  <section class="demo-section">
+    <button (click)="increment()">Increment</button>
+    <p>Count: {{ count() }}</p>
+    <p>{{ log() }}</p>
+  </section>
+</div>

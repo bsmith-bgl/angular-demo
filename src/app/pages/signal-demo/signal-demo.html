@@ -1,0 +1,15 @@
+<div class="container">
+  <a routerLink="/" class="back-link">← Back to Home</a>
+
+  <h1>Signal Demo</h1>
+  <p>Basic signal usage</p>
+
+  <section class="demo-section">
+    <div class="counter">
+      <button (click)="decrement()">-</button>
+      <span class="count-display">{{ count() }}</span>
+      <button (click)="increment()">+</button>
+      <button (click)="reset()" class="reset-btn">Reset</button>
+    </div>
+  </section>
+</div>

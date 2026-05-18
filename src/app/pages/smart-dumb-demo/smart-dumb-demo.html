@@ -1,0 +1,13 @@
+<div class="container">
+  <a routerLink="/" class="back-link">← Back to Home</a>
+
+  <h1>Smart/Dumb Component Demo</h1>
+  <p>Smart component manages data and state, dumb component receives input and emits output</p>
+
+  <section class="demo-section">
+    @let data = fetchData();
+    <button (click)="data">Fetch Data</button>
+    <app-dumb-child [items]="items()" (itemClicked)="handleItemClick($event)" />
+    <p>Selected: <strong>{{ selectedItem() }}</strong></p>
+  </section>
+</div>

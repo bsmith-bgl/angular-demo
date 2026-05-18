@@ -1,0 +1,24 @@
+<div class="container">
+  <a routerLink="/" class="back-link">← Back to Home</a>
+
+  <h1>Computed Demo</h1>
+  <p>Computed signals automatically update when dependencies change</p>
+
+  <section class="demo-section">
+    <div class="input-group">
+      <input
+        type="text"
+        [value]="firstName()"
+        (input)="updateFirstName($event)"
+        placeholder="First name"
+      />
+      <input
+        type="text"
+        [value]="lastName()"
+        (input)="updateLastName($event)"
+        placeholder="Last name"
+      />
+    </div>
+    <p class="result">Full Name: <strong>{{ fullName() }}</strong></p>
+  </section>
+</div>

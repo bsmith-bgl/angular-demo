@@ -1,0 +1,9 @@
+<div>
+  <input
+    type="text"
+    [value]="name()"
+    (input)="updateName($event)"
+    placeholder="Type here..."
+  />
+  <p>Child sees: {{ name() }}</p>
+</div>
