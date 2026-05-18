@@ -5,9 +5,9 @@
   <p>Smart component manages data and state, dumb component receives input and emits output</p>
 
   <section class="demo-section">
-    @let data = fetchData();
-    <button (click)="data">Fetch Data</button>
+    <button (click)="fetchData()">Fetch Data</button>
     <app-dumb-child [items]="items()" (itemClicked)="handleItemClick($event)" />
-    <p>Selected: <strong>{{ selectedItem() }}</strong></p>
+    @let data = selectedItem();
+    <p>Selected: <strong>{{ data }}</strong></p>
   </section>
 </div>

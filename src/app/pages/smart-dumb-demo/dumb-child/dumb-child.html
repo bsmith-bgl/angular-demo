@@ -1,7 +1,5 @@
 <ul>
   @for (item of items(); track $index) {
-    <li>
-      <button (click)="onItemClick(item)">{{ item }}</button>
-    </li>
+    <li (click)="onItemClick(item)">{{ item }}</li>
   }
 </ul>
