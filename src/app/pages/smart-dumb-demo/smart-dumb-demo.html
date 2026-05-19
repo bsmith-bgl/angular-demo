@@ -6,6 +6,10 @@
 
   <section class="demo-section">
     <button (click)="fetchData()">Fetch Data</button>
+    <!--
+    Below is an example of passing through a signal as an input, we shouldn't be doing this...
+    <app-dumb-child [items]="items" (itemClicked)="handleItemClick($event)" />
+    -->
     <app-dumb-child [items]="items()" (itemClicked)="handleItemClick($event)" />
     @let data = selectedItem();
     <p>Selected: <strong>{{ data }}</strong></p>
